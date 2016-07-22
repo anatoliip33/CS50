@@ -1,0 +1,35 @@
+0.  BMP support most commonly use 24-bit color, which is 16.7 million colours,
+    but also can support 32-bit color, which is 4.29 billion colors.
+    GIF support 8-bit color - 256 colors.
+    JPEG support 24-bit color - 16.7 million colours.
+    PNG support 24-bit color - 16.7 million colours.
+1.  GIF.
+2.  The difference between lossy and lossless compression is that after lossless
+    compression you can uncompress and original data will be recovered, instead, 
+    lossy compression after uncompressing can lose some data. 
+3.  JPEG format.
+4.  Deleting a file rewrites the metadata that pointed to the file, but
+    leaves the disk blocks containing the file’s contents intact. 
+5.  I can use sanitation tools to ensure the files, that were deleted 
+    cannot be recovered. Also, I can overwrite a hard disk by filling every 
+    addressable block with NUL bytes or random characters
+6.  The header file declares sets of integer types that have specified widths.
+7.  These datatypes are fixed length, that means they are a cross-platform 
+    implementation of a standard data type.
+8.  BYTE - 1 byte, DWORD - 4 bytes, LONG - 4 bytes, WORD - 2 bytes.
+9.  ASCII - "BM"; decimal - 6677; hexadecimal - 0x424D.
+10. bfsize - size of bitmap file in bytes, bisize - size of the 
+    BITMAPINFOHEADER in bytes.
+11. If biHeight is negative, the bitmap is a top-down DIB and it's origin is 
+    the upper-left corner.
+12. biBitCount.
+13. Because there is no more free space in a filesystem to create a file or user 
+    doesn't have permissions to create it.
+14. Because it determines the number of elements fread will read. 
+    This argument is always 1 because we are always reading one file.
+15. 3.
+16. Use fseek when you want to change the offset of the file pointer fp. 
+    It allows you to change the location of the file pointer.
+17. SEEK_CUR is an argument to fseek(), indicates current position of the 
+    file pointer.
+18. Rick Astley.

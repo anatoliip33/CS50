@@ -1,0 +1,34 @@
+0.  It is the longest word in the English language published in a dictionary, 
+    the Oxford English Dictionary.
+1.  It returns resource usage measures for a process, like CPU time and
+    how many memory used.
+2.  Struct rusage has 16 members.
+3.  We pass before and after by reference to save time and memory resources, 
+    because copying two structs it's wasting time and resources. 
+4.  In function main for loop works in that way, before the loop, we open a file,
+    initialize variables, index, for indexing in the array, misspellings for 
+    count the number of typos, words for counting words, also we initialized
+    array word. The loop points the cursor at each character until it points to
+    the end of file(EOF). While it points at each character, there is conditions
+    in the loop which character must match to make a word, like if it's alphabetical
+    or an apostrophe proceeded by a letter, if so, the character is added to 
+    array word, and index increase by 1. If index greater than LENGTH then index
+    reset to 0, same for numbers in words, they ignored. If a character didn't 
+    match any condition and index greater than 0, then it must be the end of 
+    the word and to that end we added "end of string character". After that we 
+    increase words counter. The word is then passed through the mispelling checks.
+5.  fgetc read a character one by one, checks it, if it's alphabetical and if 
+    it's no digit and then add it to buffer "word", with fscanf we can't do that 
+    because it reads all characters until white space and stores the array in a 
+    buffer, so we can't check a character to match our conditions.
+6.  These parameters should not be changed in the functions. To avoid they are
+    changes, we declared them as constants.
+7.  I used hashtable, to make hashtable use linked list, to make linked list use
+    custom struct node, where I store words with a pointer(link) to next node, 
+    where will be another word with and a pointer to next node, if pointer to 
+    next node is NULL, then it's the end of that linked list. Every linked list 
+    has it's index and were sorted, linked lists with indexes make hashtable.
+8.  For texts/austinpowers.txt time in total 0.06.
+9.  I didn't do any changes to improve results, but for a long time I could not 
+    write good and quick hashfunction, so I found this function online.
+10. Maybe I can improve hashfunction.
